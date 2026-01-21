@@ -7,8 +7,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: devops
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: admin
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
     volumes:
       - ./mysql-data:/var/lib/mysql
       - ./message.sql:/docker-entrypoint-initdb.d/message.sql
